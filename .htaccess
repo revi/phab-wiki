@@ -1,4 +1,5 @@
 <IfModule mod_rewrite.c>
 	RewriteEngine On
 	RewriteRule ^/*$ https://phabricator.wikimedia.org/ [R=301,L]
+	RewriteRule ^/?(\d+)$ https://phabricator.wikimedia.org/T$1 [QSA,R=301,L]
 </IfModule>
